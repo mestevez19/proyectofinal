@@ -7,6 +7,23 @@ Here are the data for the project:
 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-You should create one R script called run_analysis.R that does the following.
+# Codebooks
+The codebook ```Codebook.md``` is included in this repo.
 
-Merges the training and the test sets to create one data set. Extracts only the measurements on the mean and standard deviation for each measurement. Uses descriptive activity names to name the activities in the data set Appropriately labels the data set with descriptive variable names. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+# Run
+Use the following commands in R to run the analysis
+
+```
+source("analysisFinal.R")
+ejecutaranalisis()
+```
+
+### Output
+The analysis will result in a file called tidy_data_final.txt
+
+
+### processed data
+The tidy_data_final.txt dataset can be read using
+
+```
+data <- read.table(file_path, header = TRUE)
